@@ -1,0 +1,54 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.sub-main {
+  width: 50%;
+
+  .sign-up-typo {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 76px;
+    font-weight: 700;
+  }
+  .full-name-typo {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: #000000 !important;
+    margin-bottom: 20px !important;
+    text-align: left;
+  }
+  .full-name-text {
+    margin-bottom: 50px !important;
+    text-align: left;
+  }
+
+  .username-typo {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: #000000 !important;
+    margin-bottom: 20px !important;
+  }
+  // .select-designation {
+  //   display: flex;
+  //   justify-content: left;
+  //   text-align: center;
+  //   font-size: 18px !important;
+  //   font-weight: 500 !important;
+  //   color: #000000 !important;
+  //   margin-bottom: 50px !important;
+  // }
+  .sign-up-butn {
+    color: #ffffff;
+    background-color: #b74e48;
+    font-weight: 700;
+    line-height: 33px;
+  }
+}
+
+   

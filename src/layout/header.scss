@@ -1,0 +1,50 @@
+.header-main-grid {
+  background-color: #607163;
+  height: 131px;
+
+  .header-frist-grid {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-emblem-logo {
+    margin-left: 123px;
+    margin-right: 39px;
+  }
+
+
+  .header-first-typo {
+    color: #ffffff;
+    height: 45px;
+    top: 21px;
+    width: 410px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .header-second-typo {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .header-second-grid {
+    color: #747b80;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-search {
+    background-color: #d9d9d9;
+    border-radius: 50px;
+  }
+  .menu-item{
+    
+  }
+  
+  
+}
