@@ -67,7 +67,7 @@ export default function ManagePanchayat() {
         alignItems: "center",
       }}
     >
-      <div style={{ width:"70%", padding: "30px" }}>
+      <div style={{ width: "70%", padding: "30px" }}>
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 700 }} aria-label="customized table">
             <TableHead>

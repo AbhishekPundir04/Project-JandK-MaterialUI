@@ -1,6 +1,5 @@
 import {
   Avatar,
-  Box,
   Divider,
   Grid,
   InputAdornment,
@@ -50,31 +49,76 @@ const Header = () => {
               ),
             }}
           />
-          <Box>
-            <Avatar
-              sx={{ marginLeft: "36px", width: "38px", height: "38px" }}
-              src="/broken-image.jpg"
-              onClick={handleClick}
-            />
+          <Avatar
+            sx={{ marginLeft: "36px", width: "45px", height: "45px" }}
+            src="/broken-image.jpg"
+            onClick={handleClick}
+          />
+          <div style={{ borderRadius: "24px" }}>
             <Menu
               anchorEl={anchorEl}
               open={Boolean(anchorEl)}
               onClose={handleClose}
               anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
+                vertical: "55%",
+                horizontal: "50%",
               }}
               transformOrigin={{
                 vertical: "top",
                 horizontal: "right",
               }}
-
             >
-              <MenuItem className="menu-item">Profile</MenuItem>
-              <MenuItem className="menu-item">My account</MenuItem>
-              <MenuItem className="menu-item">Logout</MenuItem>
+              <MenuItem
+                sx={{
+                  height: "50px",
+                  padding: "20px",
+                  width: "200px",
+                  borderRadius: "20px",
+                  "&:hover": {
+                    backgroundColor: "#607163",
+                    color: "#FFFFFF",
+                    margin: "6px",
+                   
+                  },
+                }}
+                className="menu-item"
+              >
+                Profile
+              </MenuItem>
+              <MenuItem
+                sx={{
+                  height: "50px",
+                  width: "200px",
+                  borderRadius: "20px",
+                  "&:hover": {
+                    backgroundColor: "#607163",
+                    color: "#FFFFFF",
+                    margin: "6px",
+                    
+                  },
+                }}
+                className="menu-item"
+              >
+                My account
+              </MenuItem>
+              <MenuItem
+                sx={{
+                  height: "50px",
+                  width: "200px",
+                  borderRadius: "20px",
+                  "&:hover": {
+                    backgroundColor: "#607163",
+                    color: "#FFFFFF",
+                    margin: "6px",
+                  },
+                }}
+                className="menu-item"
+              >
+                Logout
+              </MenuItem>
             </Menu>
-          </Box>
+          </div>
+
           <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
         </Grid>
       </Grid>

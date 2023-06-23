@@ -30,22 +30,21 @@ const DashboardScreen = () => {
   return (
     <Box>
       <Grid container spacing={5} justifyContent="center" alignItems="center">
-        <Grid item xs={6} sm={6}  sx={{ width: "40%" }}>
-          <DashboardCard
-            number={40}
-            title={"MY PANCHAYAT"}
-            images={dashboardicons}
-          />
+        <Grid item xs={12} sm={6} md={3}>
+          <Box sx={{ margin: "20px 0 16px", textAlign: "center" }}>
+            <DashboardCard
+              number={40}
+              title={"MY PANCHAYAT"}
+              images={dashboardicons}
+            />
+          </Box>
         </Grid>
       </Grid>
-      <Grid
-        container
-        spacing={2}
-        justifyContent="center"
-      >
+
+      <Grid container spacing={2} justifyContent="center">
         {cardData.slice(0, 2).map((card, index) => (
           <Grid item key={index} xs={6} sm={3}>
-            <Box sx={{ margin: "20px 0" }}>
+            <Box sx={{ margin: "20px " }}>
               <DashboardCard
                 number={card.number}
                 title={card.title}
@@ -55,14 +54,10 @@ const DashboardScreen = () => {
           </Grid>
         ))}
       </Grid>
-      <Grid
-        container
-        spacing={2}
-        justifyContent="center"
-      >
+      <Grid container spacing={2} justifyContent="center">
         {cardData.slice(2).map((card, index) => (
           <Grid item key={index} xs={6} sm={3}>
-            <Box sx={{ margin: "20px 0" }}>
+            <Box sx={{ margin: "20px" }}>
               <DashboardCard
                 number={card.number}
                 title={card.title}

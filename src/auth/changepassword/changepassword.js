@@ -36,6 +36,7 @@ const ChangePassword = () => {
       <TransitionsModal
         isOpen={isModalOpen}
         handleOpen={() => setModalOpen(false)}
+       
       />
     </div>
   );

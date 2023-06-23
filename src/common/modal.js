@@ -63,12 +63,7 @@ export default function TransitionsModal(props) {
           <div style={{ padding: "20px" }}>
             <CheckCircleOutlineIcon />
           </div>
-          {/* {props?.title &&
-          <Typography sx={{ textAlign: "center" }} variant="h6" component="h2">
-            
-            {props.title}
-          </Typography>
-           } */}  
+         
           <Typography sx={{ textAlign: "center" }} variant="h6" component="h2">
             {props?.title?props.title : "Your password has been changed successfully"}
           </Typography>
